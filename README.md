@@ -1,1 +1,0 @@
-[My CV](https://DashaBaranova.github.io/rsschool-cv/cv)

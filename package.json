@@ -1,0 +1,16 @@
+{
+  "name": "keyboard",
+  "version": "1.0.0",
+  "description": "RS task",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node node_modules/eslint/bin/eslint.js",
+    "lint:fix": "node node_modules/eslint/bin/eslint.js --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  }
+}

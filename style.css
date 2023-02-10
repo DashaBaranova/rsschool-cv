@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(35, 91, 134);
+    margin-top: 120px;
+}
+
+body::after {
+    content: 'Switch language: Ctrl + Space';
+}
+
+.container {
+    max-width: 815px;
+    display: grid;
+    height: 400px;
+    grid-template-rows: 30% repeat(5, 14%);
+    grid-template-columns: 100%;
+    background-color: rgb(7, 57, 65);
+    box-sizing: border-box;
+    border: 2px solid rgb(218, 10, 10);
+    box-shadow: 5px 5px 10px 0px;
+    border-radius: 8px;
+    margin: 0 auto; 
+}
+
+textarea {
+    border-radius: 5px;
+    background-color: rgb(213, 245, 245);
+    box-shadow: inset 0px 3px 7px 0px rgb(82, 167, 196);
+}
+  
+.keyboard {
+    height: 276px;
+    display: grid;
+    align-items: center;
+    justify-items: center
+}
+
+button {
+    box-sizing: border-box;
+    background-color: rgb(14, 98, 124);
+    color: rgb(186 229 237);
+    border: 2px solid rgb(182, 206, 221);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    margin: 1.8px;
+}
+
+button:hover {
+    border: 1px solid #c62727;
+    font-size: 15px;
+}
+
+button:active {
+    box-shadow: 0 0 40px 40px rgb(186 229 237) inset;
+    color: rgb(7, 57, 65);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.backspace {
+    width: 105px;
+}
+.caps {
+    width: 105px;
+    position: relative;
+}
+
+.caps_active::after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: #c62727;
+    border-radius: 50%;
+}
+
+.enter {
+    width: 105px;
+}
+
+.leftshift {
+    width: 105px;
+}
+
+.leftctrl {
+    width: 87px;
+}
+.space {
+    width: 335px; 
+}
+
+.active {
+    box-shadow: 0 0 40px 40px rgb(186 229 237) inset;
+    color: rgb(7, 57, 65);
+    font-weight: bold;
+    font-size: 16px;
+}
