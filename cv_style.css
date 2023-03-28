@@ -1,0 +1,102 @@
+body {
+    width: 1200px;
+    height: 1600px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(243, 238, 238);
+}
+.container {
+    width: 1100px;
+    height: 1500px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.first-column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(210 84 95 / 81%);
+    position: relative;
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 87px;
+}
+.picture img {
+    width: 370px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px 1px rgb(112, 21, 21);
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 8, 6);
+
+}
+.main-info {
+    position: relative;
+}
+.info {
+   margin-top: 620px;
+}
+.small {
+    text-align: end;
+    margin-top: 9px;
+    font-style: oblique;
+}
+.title p {
+    margin: 0;
+    text-align: center;
+}
+.content {
+    height: 50%;
+}
+.about {
+    width: 300px;
+}
+.about p {
+    text-align: justify;
+    height: 290px;
+}
+.contacts {
+    color: rgb(0, 8, 6);
+    font-weight: bold ;
+}
+.second-column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    color:  rgb(0, 8, 6);
+}
+.education {
+    height: 50%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+li::marker {
+    color:brown;
+}
+ul {
+    text-align: justify;
+}
+.experience {
+    width: 400px;
+}
+.color{
+    color: brown;
+}
