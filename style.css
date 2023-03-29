@@ -1,102 +1,102 @@
 body {
-    background-color: rgb(35, 91, 134);
-    margin-top: 120px;
+    width: 1200px;
+    height: 1600px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(243, 238, 238);
 }
-
-body::after {
-    content: 'Switch language: Ctrl + Space';
-}
-
 .container {
-    max-width: 815px;
-    display: grid;
-    height: 400px;
-    grid-template-rows: 30% repeat(5, 14%);
-    grid-template-columns: 100%;
-    background-color: rgb(7, 57, 65);
-    box-sizing: border-box;
-    border: 2px solid rgb(218, 10, 10);
-    box-shadow: 5px 5px 10px 0px;
-    border-radius: 8px;
-    margin: 0 auto; 
+    width: 1100px;
+    height: 1500px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-
-textarea {
-    border-radius: 5px;
-    background-color: rgb(213, 245, 245);
-    box-shadow: inset 0px 3px 7px 0px rgb(82, 167, 196);
-}
-  
-.keyboard {
-    height: 276px;
-    display: grid;
+.first-column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center
-}
-
-button {
-    box-sizing: border-box;
-    background-color: rgb(14, 98, 124);
-    color: rgb(186 229 237);
-    border: 2px solid rgb(182, 206, 221);
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    -webkit-tap-highlight-color: transparent;
-    margin: 1.8px;
-}
-
-button:hover {
-    border: 1px solid #c62727;
-    font-size: 15px;
-}
-
-button:active {
-    box-shadow: 0 0 40px 40px rgb(186 229 237) inset;
-    color: rgb(7, 57, 65);
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.backspace {
-    width: 105px;
-}
-.caps {
-    width: 105px;
+    background-color: rgb(210 84 95 / 81%);
     position: relative;
 }
-
-.caps_active::after {
+.picture {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    content: '';
-    top: 10px;
-    right: 10px;
-    width: 8px;
-    height: 8px;
-    background: #c62727;
+    margin-top: 130px;
+    margin-left: 87px;
+}
+.picture img {
+    width: 370px;
     border-radius: 50%;
+    box-shadow: 0px 0px 9px 1px rgb(112, 21, 21);
 }
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 8, 6);
 
-.enter {
-    width: 105px;
 }
-
-.leftshift {
-    width: 105px;
+.main-info {
+    position: relative;
 }
-
-.leftctrl {
-    width: 87px;
+.info {
+   margin-top: 620px;
 }
-.space {
-    width: 335px; 
+.small {
+    text-align: end;
+    margin-top: 9px;
+    font-style: oblique;
 }
-
-.active {
-    box-shadow: 0 0 40px 40px rgb(186 229 237) inset;
-    color: rgb(7, 57, 65);
-    font-weight: bold;
-    font-size: 16px;
+.title p {
+    margin: 0;
+    text-align: center;
+}
+.content {
+    height: 50%;
+}
+.about {
+    width: 300px;
+}
+.about p {
+    text-align: justify;
+    height: 290px;
+}
+.contacts {
+    color: rgb(0, 8, 6);
+    font-weight: bold ;
+}
+.second-column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    color:  rgb(0, 8, 6);
+}
+.education {
+    height: 50%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+li::marker {
+    color:brown;
+}
+ul {
+    text-align: justify;
+}
+.experience {
+    width: 400px;
+}
+.color{
+    color: brown;
 }
